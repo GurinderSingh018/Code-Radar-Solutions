@@ -4,7 +4,7 @@
 int main() {
     int a,b,result;
     scanf("%d %d",&a, &b);
-    result=(a>>b)&0;
+    result=~(a>>b);
     printf("%d",result<<b);
     
     return 0;
