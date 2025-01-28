@@ -10,7 +10,7 @@ int main() {
         printf("Valid");
     }
     else{
-        printf("Invlaid")
+        printf("Invlaid");
     }
     return 0;
     
