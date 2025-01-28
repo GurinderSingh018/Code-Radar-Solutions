@@ -4,7 +4,7 @@
 int main() {
     char a;
     scanf("%c",&a);
-    if(97<=a<=122){
+    if(a<=122 &&a>=97){
         printf("Lowercase");
     }
     else{
