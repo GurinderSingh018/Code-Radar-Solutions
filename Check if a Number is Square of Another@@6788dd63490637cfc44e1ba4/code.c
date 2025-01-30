@@ -3,7 +3,7 @@
 int main() {
     int a,b;
     scanf("%d %d",&a,&b);
-    int square=power(b,2);
+    int square=b*b;
     if(square==a){
         printf("Yes");
     }
