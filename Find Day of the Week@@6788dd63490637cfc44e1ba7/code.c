@@ -1,6 +1,5 @@
 #include <stdio.h>
 
-
 int main() {
     int a;
     scanf("%d",&a);
@@ -19,7 +18,7 @@ int main() {
         break;
         case 5:
         printf("Friday");
-        break
+        break;
         case 6:
         printf("Saturday");
         break;
