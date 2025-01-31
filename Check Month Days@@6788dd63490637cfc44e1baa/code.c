@@ -6,7 +6,7 @@ int main() {
     if (a>0&&a<8){
         if(a==2){
             printf("28");
-            break;
+            
         }
         else if(a%2==0){
             printf("30");
