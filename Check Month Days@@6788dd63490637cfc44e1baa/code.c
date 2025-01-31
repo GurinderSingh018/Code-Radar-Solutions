@@ -13,7 +13,7 @@ int main() {
 
         }
         else{
-            printf("30");
+            printf("31");
         }
     }
     else if(a>=8 && a<=12){
