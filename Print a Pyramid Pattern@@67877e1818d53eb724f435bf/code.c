@@ -8,7 +8,10 @@ int main() {
         for(int j=1;j<=a-1;j++){
             printf(" ");
         }
-        
+        for (int x=1;x<=2*i-1;x++){
+            printf("*");
+        }
+        printf("\n");
     }
     return 0;
 }
