@@ -2,7 +2,7 @@
 
 
 int main() {
-    char alpha[]={A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z};
+    char alpha[30]="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     int n;
     scanf("%d",&n);
     for(int i=1;i<=n;i++){
