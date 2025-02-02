@@ -13,7 +13,7 @@ int main() {
             
                }
         if(i>1){
-            for(int l=n-1;l>=1;i--){
+            for(int l=n-1;l>=1;l--){
                 printf("%d",l);
             }
         }
