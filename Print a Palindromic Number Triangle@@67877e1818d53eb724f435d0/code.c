@@ -10,14 +10,13 @@ int main() {
         }
         for(int k=1;k<=i;k++){
             printf("%d",k);
-            if(i>1){
-                for(int l=n-1;l>=1;l--){
-                    printf("%d",l);
-                }
+            
+               }
+        if(i>1){
+            for(int l=n-1;l>=1;i--){
+                printf("%d",l);
             }
-           
-            }
-        
+        }
         printf("\n");
         
     }
