@@ -8,19 +8,26 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int i;
+    int i,j;
     int valid=1;
-    for(i=1;i<n-1;i++){
-        
+    for(j=0;j<n;j++){
+        if(arr[n]>arr[j]){
+            printf("%d",arr[n-1]);
+        }
+    }
+    
+    for(i=1;i<n-2;i++){     
         if(arr[i-1]<arr[i] && arr[i]>arr[i+1]){
             valid=0;
             break;
         }
     }
+    
    
     if(valid==0){
         printf("%d",arr[i]);
     }
+    
     else{
         printf("-1");
     }
