@@ -11,12 +11,12 @@ int main() {
     }
     int valid=1;
     for(int i=1;i<n;i++){
-        if(arr[i]>arr[i-1]){
-            valid=0;
+        if(arr[i]>=arr[i-1]){
+            valid=1;
         }
         
     }
-    if(valid=0){
+    if(valid=1){
         printf("Sorted");
     }
     else{
