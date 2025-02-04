@@ -9,12 +9,18 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int i;
-
+    int valid=1;
     for(i=1;i<=n-1;i++){
         if(arr[i-1]<arr[i]&& arr[i]>arr[i+1]){
+            valid=0;
             break;
         }
     }
-    printf("%d",arr[i]);
+    if(valid==0){
+        printf("%d",arr[i]);
+    }
+    else{
+        printf("-1");
+    }
     return 0;
 }
