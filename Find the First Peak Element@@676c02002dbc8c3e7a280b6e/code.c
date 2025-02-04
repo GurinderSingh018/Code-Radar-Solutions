@@ -17,10 +17,8 @@ int main() {
             break;
         }
     }
-    if(arr[n-2]<arr[n-1]){
-        printf("%d",arr[n-1]);
-    }
-    else if(valid==0){
+   
+    if(valid==0){
         printf("%d",arr[i]);
     }
     else{
