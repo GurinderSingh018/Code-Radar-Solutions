@@ -10,12 +10,7 @@ int main() {
     }
     int i,j;
     int valid=1;
-    for(j=0;j<n;j++){
-        if(arr[n]>arr[j]){
-            printf("%d",arr[n-1]);
-        }
-    }
-    
+ 
     for(i=1;i<n-2;i++){     
         if(arr[i-1]<arr[i] && arr[i]>arr[i+1]){
             valid=0;
