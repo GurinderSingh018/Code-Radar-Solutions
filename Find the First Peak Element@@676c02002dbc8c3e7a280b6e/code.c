@@ -11,11 +11,8 @@ int main() {
     int i;
     int valid=1;
     for(i=1;i<=n;i++){
-        if(arr[n-1]>arr[i]){
-            printf("%d",arr[n-1]);
-            
-            }
-        else if(arr[i-1]<arr[i] && arr[i]>arr[i+1]){
+        
+        if(arr[i-1]<arr[i] && arr[i]>arr[i+1]){
             valid=0;
             break;
         }
