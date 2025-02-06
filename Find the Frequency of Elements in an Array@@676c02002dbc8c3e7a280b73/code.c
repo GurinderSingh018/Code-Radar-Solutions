@@ -7,10 +7,21 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",arr[i]);
     }
-    int count =1;
+    
     int arr2[n];
     for(int i=0;i<n;i++){
-        if(arr[i]==)
+        int count=1
+        for(int j=0;j<n;j++){
+            if(arr[i]=arr[j]){
+                count++;
+            }
+        }
+        arr2[i]=count;
+    }
+    for(int i=0;i<n;i++){
+        if(arr2[i]>0){
+            printf("%d %d\n",arr[i],arr2[j]);
+        }
     }
     return 0;
 }
