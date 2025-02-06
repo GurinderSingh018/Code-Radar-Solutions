@@ -20,7 +20,7 @@ int main() {
     }
     for(int i=0;i<n;i++){
         if(arr2[i]>0){
-            printf("%d %d\n",arr[i],arr2[j]);
+            printf("%d %d\n",arr[i],arr2[i]);
         }
     }
     return 0;
