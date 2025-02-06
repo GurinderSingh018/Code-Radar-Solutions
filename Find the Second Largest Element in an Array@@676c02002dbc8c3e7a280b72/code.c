@@ -30,7 +30,7 @@ int main() {
           }
         }
     }
-   if(valid=1){
+   if(valid==1){
     printf("%d",num);
    }
    else{
