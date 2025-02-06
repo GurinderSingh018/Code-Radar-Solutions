@@ -1,17 +1,15 @@
 #include <stdio.h>
 
-
 int main() {
     int n;
     scanf("%d",&n);
     int arr[n];
     int arr2[n];
     for(int i=0;i<n;i++){
-        scanf("%d",arr[i]);
+        scanf("%d ",arr[i]);
         arr2[i]=0;
     }
-    
-    
+        
     int arr3[n];
     for(int i=0;i<n;i++){
         int count=0;
