@@ -15,13 +15,20 @@ int main() {
         }
     }
     int num=arr[0];
+    int valid=1;
     for(int i=0;i<n;i++){
         for (int j=0;j<n;j++){
           if(arr[i]<max && arr[i]>arr[j] ){
                num=arr[i];
+               valid=1;
           }
         }
     }
+    if(valid==1){
     printf("%d",num);
+    }
+    else{
+        printf("-1";)
+    }
     return 0;
 }
