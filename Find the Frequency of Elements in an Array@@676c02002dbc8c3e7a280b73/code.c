@@ -10,14 +10,14 @@ int main() {
         arr2[i]=0;
     }
         
-    int arr3[n];
+    
     for(int i=0;i<n;i++){
         int count=0;
         if(arr2[i]==0){
         for(int j=0;j<n;j++){
             if(arr[i]=arr[j]){
                 count++;
-                arr3[i]=arr[i];
+                arr2[j]=0;
             }
         }
         arr2[i]=count;
@@ -25,7 +25,7 @@ int main() {
     }
     for(int i=0;i<n;i++){
         if(arr2[i]>0){
-            printf("%d %d\n",arr3[i],arr2[i]);
+            printf("%d %d\n",arr[i],arr2[i]);
         }
     }
     return 0;
