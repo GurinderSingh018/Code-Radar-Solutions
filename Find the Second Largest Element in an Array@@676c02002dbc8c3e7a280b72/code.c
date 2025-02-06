@@ -24,7 +24,7 @@ int main() {
             valid=0;
             
           }
-          if(arr[i]<max && arr[i]>arr[j] ){
+          else if(arr[i]<max && arr[i]>arr[j] ){
                num=arr[i];
                valid=1;
           }
