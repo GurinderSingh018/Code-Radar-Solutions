@@ -24,7 +24,7 @@ int main() {
             break;
         }
     }
-    if(valid==1){
+    if(valid==1||n==1){
         printf("%d",num);
     }
     else{
