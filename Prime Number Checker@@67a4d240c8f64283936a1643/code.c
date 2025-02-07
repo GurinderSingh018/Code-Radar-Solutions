@@ -1,9 +1,9 @@
 #include <stdio.h>
 
-int isPrime(int num){
+int isPrime(int n){
     int count=0;
-    for(int i=0;i<num;i++){
-        if(num%i==0){
+    for(int i=0;i<n;i++){
+        if(n%i==0){
             count++;
         }
     }
