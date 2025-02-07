@@ -5,9 +5,15 @@ int main() {
     int n;
     scanf("%d",&n);
     int arr[n];
+   
+
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
+    if(n==1){
+        printf("%d",arr[0]);
+    }
+    else{
     int num;
     int valid=0;
     for(int i=0;i<n-1;i++){
@@ -19,7 +25,7 @@ int main() {
         }
         }
         
-        if(count>n/2 || n==1){
+        if(count>n/2 ){
             num=arr[i];
             valid=1;
             break;
@@ -30,6 +36,7 @@ int main() {
     }
     else{
         printf("-1");
+    }
     }
     return 0;
 }
