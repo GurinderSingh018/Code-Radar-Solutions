@@ -12,12 +12,15 @@ int main() {
     int valid=1;
     for(int i=0;i<n-1;i++){
         int count =0;
-        if(arr[i]==arr[i+1]){
+        for(int j=0j<n-1;j++){
+        if(arr[i]==arr[j+1]){
             count++;
             if(count>(n/2)){
                 num=arr[i];
                 valid=1;
+                break;
             }
+        }
         }
     }
     if(valid==1){
