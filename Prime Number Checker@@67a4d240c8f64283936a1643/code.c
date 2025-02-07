@@ -2,8 +2,8 @@
 
 int isPrime(int num){
     int count=0;
-    for(int i=0;i<n;i++){
-        if(i%n==0){
+    for(int i=0;i<num;i++){
+        if(num%i==0){
             count++;
         }
     }
