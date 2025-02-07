@@ -18,13 +18,13 @@ int main() {
            
         }
         }
-        if(count>n/2){
+        if(count>n/2||n==1){
             num=arr[i];
             valid=1;
             break;
         }
     }
-    if(valid==1||n==1){
+    if(valid==1){
         printf("%d",num);
     }
     else{
