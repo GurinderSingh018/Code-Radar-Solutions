@@ -24,8 +24,8 @@ int main() {
            
         }
         }
-        
-        if(count>n/2 ){
+        int a=n/2
+        if(count>a ){
             num=arr[i];
             valid=1;
             break;
