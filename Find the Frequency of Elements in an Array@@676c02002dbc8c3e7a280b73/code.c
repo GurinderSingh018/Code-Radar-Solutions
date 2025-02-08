@@ -11,7 +11,7 @@ int main() {
     }
     int arr3[n];
     
-    for(int i=0;i<=n/2;i++){
+    for(int i=0;i<n;i++){
         
         if(arr[i]==arr3[i]){
             continue;
