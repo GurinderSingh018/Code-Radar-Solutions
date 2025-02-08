@@ -12,11 +12,14 @@ int main() {
     int arr3[n];
     
     for(int i=0;i<n;i++){
-        
+        int valid=0;
         for(int k=0;k<n;k++){
             if(arr3[i]==arr[k]){
-                continue;
+                valid=1;
             }
+        }
+        if(valid==1){
+            continue;
         }
         int count=0;
         for(int j=0;j<n;j++){
