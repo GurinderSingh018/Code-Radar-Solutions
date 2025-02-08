@@ -13,6 +13,9 @@ int main() {
         if(arr[i]==arr[n-1-i]){
              valid=1;
         }
+        else{
+            break;
+        }
     }
     if(valid==1){
         printf("YES");
