@@ -12,25 +12,17 @@ int main() {
     int arr3[n];
     
     for(int i=0;i<n;i++){
-        int valid=0;
-        for(int k=0;k<n;k++){
-            if(arr3[i]==arr[k]){
-                valid=1;
-            }
-        }
-        if(valid==1){
-            continue;
-        }
-        int count=0;
-        for(int j=0;j<n;j++){
+       if(arr[i]!=-1){
+        int count=1;
+        for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
                 arr3[i]=arr[i];
-                
+                arr[j]=-1;                
             }
         }
         arr2[i]=count;
-        
+       }
     }
     for(int i=0;i<n;i++){
         if(arr2[i]>0){
