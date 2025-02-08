@@ -8,28 +8,18 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    
-    int max=arr[0];
+    int valid=0;
+    int max1,max2=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]>max){
-            max=arr[i];
+            max2=max1;
+            max1=arr[i];
+            valid=1
         }
+
     }
-    int num=arr[0];
-    int valid =1;
-    for(int i=0;i<n;i++){
-        
-        for (int j=0;j<n;j++){
-          if(n<2 || arr[i]==arr[i+1]){
-            valid=0;
-            
-          }
-          else if(arr[i]<max && arr[i]>arr[j] ){
-               num=arr[i];
-               valid=1;
-          }
-        }
-    }
+   
+    
    if(valid==1){
     printf("%d",num);
    }
