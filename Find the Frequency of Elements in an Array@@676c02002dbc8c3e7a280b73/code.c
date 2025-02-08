@@ -9,7 +9,7 @@ int main() {
         scanf("%d ",&arr[i]);
         
     }
-    int arr3[n];
+    
     
     for(int i=0;i<n;i++){
        if(arr[i]!=-1){
@@ -17,7 +17,7 @@ int main() {
         for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
-                arr3[i]=arr[i];
+                
                 arr[j]=-1;                
             }
         }
@@ -26,7 +26,7 @@ int main() {
     }
     for(int i=0;i<n;i++){
         if(arr2[i]>0){
-            printf("%d %d\n",arr3[i],arr2[i]);
+            printf("%d %d\n",arr[i],arr2[i]);
         }
     }
     return 0;
