@@ -11,10 +11,9 @@ int main() {
     int i;
     int valid=0;
  
-    for(i=0;i<n-1;i++){
+    for(i=0;i<=n-1;i++){
          
-        if(
-        (i>0 && i<n-1 && arr[i-1]<arr[i] && arr[i]>arr[i+1])||
+        if((i>0 && i<n-1 && arr[i-1]<arr[i] && arr[i]>arr[i+1])||
         (i==n-1 && arr[i]>arr[i-1])){
             valid=1;
             break;
