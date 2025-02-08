@@ -21,7 +21,7 @@ int main() {
     }
     
    if(valid==1){
-    printf("%d",max1);
+    printf("%d",max2);
    }
    else{
     printf("-1");
