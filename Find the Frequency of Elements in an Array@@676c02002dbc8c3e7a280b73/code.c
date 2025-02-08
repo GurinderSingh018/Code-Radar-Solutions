@@ -14,7 +14,7 @@ int main() {
     for(int i=0;i<n;i++){
         
         for(int k=0;k<n;k++){
-            if(arr3[i]==arr[j]){
+            if(arr3[i]==arr[k]){
                 continue;
             }
         }
