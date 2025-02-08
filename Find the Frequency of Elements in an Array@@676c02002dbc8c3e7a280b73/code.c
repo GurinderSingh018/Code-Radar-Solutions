@@ -9,16 +9,16 @@ int main() {
         scanf("%d ",&arr[i]);
         arr2[i]=-1;
     }
-        
+    int arr3[n];
     
-    for(int i=0;i<n;i++){
+    for(int i=0;i<n/2;i++){
         
         if(arr2[i]==-1){
         int count=0;
         for(int j=0;j<n;j++){
-            if(arr[i]=arr[j]){
+            if(arr[i]==arr[j]){
                 count++;
-                arr2[j]=0;
+                arr3[i]=arr[i];
             }
         }
         arr2[i]=count;
@@ -26,7 +26,7 @@ int main() {
     }
     for(int i=0;i<n;i++){
         if(arr2[i]>0){
-            printf("%d %d\n",arr[i],arr2[i]);
+            printf("%d %d\n",arr3[i],arr2[i]);
         }
     }
     return 0;
