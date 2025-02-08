@@ -13,7 +13,9 @@ int main() {
     
     for(int i=0;i<=n/2;i++){
         
-        if(arr3[i]!=arr3[i+1]){
+        if(arr[i]==arr3[i]){
+            continue;
+        }
         int count=0;
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
@@ -23,7 +25,7 @@ int main() {
             }
         }
         arr2[i]=count;
-        }
+        
     }
     for(int i=0;i<n;i++){
         if(arr2[i]>0){
