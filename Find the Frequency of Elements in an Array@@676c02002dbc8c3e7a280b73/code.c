@@ -7,7 +7,7 @@ int main() {
     int arr2[n];
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
-        arr2[i]=-1;
+        
     }
     int arr3[n];
     
