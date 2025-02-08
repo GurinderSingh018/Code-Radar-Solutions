@@ -9,7 +9,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int valid=0;
-    int max1=arr[n-1];
+    int max1=arr[3];
     int max2=arr[0];
     for(int i=0;i<n;i++){
         if(arr[i]>max1){
