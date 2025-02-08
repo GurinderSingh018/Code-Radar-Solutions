@@ -8,9 +8,10 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int prime[n];
+   
 
     int count=0;
+    int prime=1;
     for(int i=0;i<n;i++){
         
         for(int j=1;j<=arr[i];j++){
@@ -19,10 +20,12 @@ int main() {
 
             }
         }
-        count=count/2;
+        if(count==2){
+            prime++;
+        }
         
     }
     int length=sizeof(prime)/sizeof(prime[0]);
-    printf("%d",count);
+    printf("%d",prime);
     return 0;
 }
