@@ -13,12 +13,13 @@ int main() {
     
     for(int i=0;i<=n/2;i++){
         
-        if(arr2[i]==-1){
+        if(arr3[i]!=arr3[i+1]){
         int count=0;
         for(int j=0;j<n;j++){
             if(arr[i]==arr[j]){
                 count++;
                 arr3[i]=arr[i];
+                
             }
         }
         arr2[i]=count;
