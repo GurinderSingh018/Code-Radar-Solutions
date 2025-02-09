@@ -4,12 +4,14 @@
 int main() {
     char a[50];
     scanf("%s",&a);
-    char b[50];
+    
     int c=strlen(a);
-    for(int i=0;i<c;i++){
-        b[n-i-1]=a[i];
-        scanf("%d",&b[n=i-1]);
+    for(int i=0;i<c/2;i++){
+        int temp=a[i];
+        a[i]=a[c-i-1];
+        a[c-i-1]=temp;
+        
     }
-    printf("%s",b);
+    printf("%s",a);
     return 0;
 }
