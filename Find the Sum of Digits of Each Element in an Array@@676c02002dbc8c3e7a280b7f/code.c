@@ -9,9 +9,14 @@ int main() {
     }
     for(int i=0;i<n;i++){
         int x=arr[i];
-        int a=x/10;
+        int count;
+        while(strlen(x)<3){
+            int x=x%10;
+            count=count+x;
+        }
         int b=x%10;
-        int sum=a+b;
+        int c=x/10;
+        int sum=a+b+c;
         printf("%d ",sum);
     }
 
