@@ -3,9 +3,9 @@
 
 int main() {
     char str[50];
-    gets(st);
+    gets(str);
     int l=strlen(str);
-    int count=1;
+    int count=0;
     for(int i=0;i<l;i++){
         if((i==0 && str[i]!=' ')||(str[i]==' ')){
             count++;
