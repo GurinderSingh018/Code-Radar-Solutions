@@ -6,7 +6,7 @@ int main() {
     scanf("%s",&str);
     int l=strlen(str);
     int count=1;
-    for(int i=0;i<n;;i++){
+    for(int i=0;i<n;i++){
         if(str[i]==" "){
             count++;
         }
