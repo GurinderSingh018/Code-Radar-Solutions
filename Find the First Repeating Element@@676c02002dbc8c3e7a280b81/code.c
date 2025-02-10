@@ -19,6 +19,9 @@ int main() {
                 break;
             }
         }
+        if(valid==1){
+            break;
+        }
     }
     if(valid==1){
         printf("%d",first);
