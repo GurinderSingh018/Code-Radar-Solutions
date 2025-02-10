@@ -7,7 +7,7 @@ int main() {
     int l=strlen(str);
     int count=1;
     for(int i=0;i<n;i++){
-        if(str[i]==" "){
+        if(str[i]=="a"){
             count++;
         }
     }
