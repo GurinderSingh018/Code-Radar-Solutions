@@ -2,7 +2,7 @@
 
 int main() {
     char str[50];
-    scanf("%s",&str);
+    fgets(str,str)
     int count=0;
     for(int i=0;i<50;i++){
         if(str[i]==' '){
