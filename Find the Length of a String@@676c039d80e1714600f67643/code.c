@@ -9,7 +9,7 @@ int main() {
         if(str[i]=='\0'){
             break;
         }
-        count++:
+        count++;
     }
     printf("%d",count);
     return 0;
