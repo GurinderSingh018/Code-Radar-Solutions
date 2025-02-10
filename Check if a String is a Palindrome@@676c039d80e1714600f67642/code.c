@@ -9,8 +9,11 @@ int main() {
        if(str[i]=str[n-1-i]){
         valid=1;
        }
+       else{
+        break;
+       }
     }
-    if(valid==1){
+    if(valid==1||n==1){
         printf("Yes");
     }
     else{
