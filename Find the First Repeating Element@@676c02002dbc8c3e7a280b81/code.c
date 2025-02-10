@@ -12,8 +12,8 @@ int main() {
     int valid=0;
     int first;
     for(int i=0;i<n;i++){
-        for(int j=0;j<n-1;j++){
-            if(arr[i]==arr[j+1]){
+        for(int j=i+1;j<n;j++){
+            if(arr[i]==arr[j]){
                 valid=1;
                 first=arr[i];
                 break;
