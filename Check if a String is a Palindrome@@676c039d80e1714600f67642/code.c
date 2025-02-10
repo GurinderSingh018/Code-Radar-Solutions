@@ -12,7 +12,7 @@ int main() {
        }
        
     }
-    if(valid){
+    if(valid==1){
         printf("Yes");
     }
     else{
