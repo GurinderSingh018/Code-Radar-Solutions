@@ -10,7 +10,7 @@ int main() {
     for(int i=0;i<n;i++){
         int x=arr[i];
         int count=0;
-        while(strlen(x)<3){
+        while(x<100){
             int x=x%10;
             count=count+x;
         }
