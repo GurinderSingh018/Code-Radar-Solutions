@@ -16,7 +16,7 @@ int main() {
         }
         int b=x%10;
         int c=x/10;
-        int sum=sum+b+c;
+        int sum=count+b+c;
         printf("%d ",sum);
     }
 
