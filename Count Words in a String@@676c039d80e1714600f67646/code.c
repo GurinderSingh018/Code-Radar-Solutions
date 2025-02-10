@@ -3,11 +3,11 @@
 
 int main() {
     char str[50];
-    scanf("%s",&str);
+    gets(st);
     int l=strlen(str);
     int count=1;
     for(int i=0;i<l;i++){
-        if(str[i]==a){
+        if((i==0 && str[i]!=' ')||(str[i]==' ')){
             count++;
         }
     }
