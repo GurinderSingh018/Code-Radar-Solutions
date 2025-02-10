@@ -2,7 +2,7 @@
 
 int main() {
     char str[50];
-    scanf("%d",&str);
+    scanf("%s",&str);
     int count=1;
     for(int i=0;i<50;i++){
         count++;
