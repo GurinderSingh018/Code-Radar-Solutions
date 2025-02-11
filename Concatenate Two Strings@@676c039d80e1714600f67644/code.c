@@ -10,6 +10,7 @@ int main(){
     for(int j=0;j!='\0';j++,i++){
         result[i]=str2[i];
     }
+    result[i]='\0';
     printf("%s",result);
 
     return 0;
