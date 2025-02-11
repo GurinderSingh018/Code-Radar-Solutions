@@ -17,7 +17,7 @@ int main(){
         result[i]=str2[j];
     }
     result[i]='\0';
-    printf("%s",result);
+    printf("%s%s",str1,str2);
 
     return 0;
  }
