@@ -1,11 +1,16 @@
 #include<stdio.h>
 int main(){
-    char str1[25];
-    char str2[25];
+    char str1[25],str2[25],result[50];
+    int i;
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
-    char str3[]= str1+str2;
-    printf("%s",str3);
+    for(i=0;i!='\0';i++){
+        result[i]=str1[i];
+    }
+    for(int j=0;j!='\0';j++,i++){
+        result[i]=str2[i];
+    }
+    printf("%s",result);
 
     return 0;
  }
