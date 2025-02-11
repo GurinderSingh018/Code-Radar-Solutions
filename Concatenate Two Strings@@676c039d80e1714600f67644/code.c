@@ -8,7 +8,7 @@ int main(){
         result[i]=str1[i];
     }
     for(int j=0;str2[j]!='\0';j++,i++){
-        result[i]=str2[i];
+        result[i]=str2[j];
     }
     result[i]='\0';
     printf("%s",result);
