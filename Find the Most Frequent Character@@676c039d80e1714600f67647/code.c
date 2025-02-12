@@ -8,6 +8,7 @@ int main(){
     int count=0,maxcount=0;
     char c;
     for(int i=0;i<n;i++){
+        count=0;
         for(int j=i+1;j<n;j++){
             if(str[i]==str[j]){
                 count++;
