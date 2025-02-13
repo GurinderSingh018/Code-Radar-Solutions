@@ -10,6 +10,7 @@ int main(){
         for(int j=0;j<strlen(str);j++){
             if(str[i]==str2[j]){
                 valid=1;
+                break;
             }
         }
     }
