@@ -7,11 +7,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d ",&arr[i]);
     }
-    int num=0;
+    int num=1;
     
     for(int i=0;i<n;i++){
         int valid=1;
-        num=num+1;
+        
        for(int j=0;j<n;j++){
         if(arr[j]==num){
              valid=0;
@@ -22,6 +22,7 @@ int main(){
         printf("%d",num);
         break;
        }
+       num++;
     }
     return 0;
 }
