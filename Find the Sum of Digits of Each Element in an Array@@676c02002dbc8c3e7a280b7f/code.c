@@ -10,13 +10,13 @@ int main() {
     for(int i=0;i<n;i++){
         int x=arr[i];
         int count=0;
-        while(x>10){
+        while(x>100){
             x=x%10;
             count=count+x;
         }
-        
+        int b=x%10;
         int c=x/10;
-        count=count+c;
+        count=count+b+c;
         printf("%d ",count);
     }
 
