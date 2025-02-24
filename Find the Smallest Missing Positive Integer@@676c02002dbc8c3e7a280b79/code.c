@@ -10,14 +10,14 @@ int main(){
     int num=0;
     int valid=1;
     for(int i=0;i<n;i++){
-        num++;
+        num=num+1;
        for(int j=0;j<n;j++){
         if(arr[j]==num){
              valid=0;
              break;
         }
        }
-       if(valid==1){
+       if(valid){
         printf("%d",num);
         break;
        }
