@@ -9,6 +9,9 @@ int main() {
     }
     for(int i=0;i<n;i++){
         int x=arr[i];
+        if(x<0){
+            x=-*x;
+        }
         int count=0;
         while(x>0){
             int a=x%10;
