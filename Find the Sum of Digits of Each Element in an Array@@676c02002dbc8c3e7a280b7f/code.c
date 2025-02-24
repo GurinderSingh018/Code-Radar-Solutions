@@ -10,7 +10,7 @@ int main() {
     for(int i=0;i<n;i++){
         int x=arr[i];
         if(x<0){
-            x=-*x;
+            x=-1*x;
         }
         int count=0;
         while(x>0){
