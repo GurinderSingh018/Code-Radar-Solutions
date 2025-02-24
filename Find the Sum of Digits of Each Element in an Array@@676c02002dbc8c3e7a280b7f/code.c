@@ -11,8 +11,9 @@ int main() {
         int x=arr[i];
         int count=0;
         while(x>100){
-            x=x%10;
-            count=count+x;
+            int a=x%10;
+            count=count+a;
+            x=x/10;
         }
         int b=x%10;
         int c=x/10;
