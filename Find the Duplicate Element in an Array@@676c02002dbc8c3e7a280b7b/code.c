@@ -9,8 +9,8 @@ int main(){
     }
     for(int i=0;i<n;i++){
         int valid=0;
-        for(int j=i+1;j<n;j++){
-            if(arr[i]==arr[j]){
+        for(int j=0;j<n;j++){
+            if(arr[i]==arr[j+1]){
                 printf("%d",arr[i]);
                 valid=1;
                 break;
