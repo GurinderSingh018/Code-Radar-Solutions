@@ -9,7 +9,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         int valid=0;
-        for(int j=1;j<n;j++){
+        for(int j=i+1;j<n;j++){
             if(arr[i]==arr[j]){
                 printf("%d",arr[i]);
                 valid=1;
