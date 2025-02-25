@@ -9,7 +9,7 @@ int main(){
     }
     int num=0;
     
-    for(int i=0;i<n;i++){
+    for(int i=0;i<=n;i++){
         int valid=1;
         num=num+1;
        for(int j=0;j<n;j++){
