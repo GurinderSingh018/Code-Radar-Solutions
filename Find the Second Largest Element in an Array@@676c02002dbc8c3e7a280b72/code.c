@@ -19,7 +19,7 @@ int main() {
         }
     }
     
-   if(valid==1){
+   if(valid){
     printf("%d",max2);
    }
    else{
