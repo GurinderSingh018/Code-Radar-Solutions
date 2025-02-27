@@ -15,13 +15,13 @@ int main(){
                 max=arr[i];
                 
             }
-            valid=1;
+            // valid=1;
         }
 
     }
-    if(valid)
+    // if(valid)
        printf("%d",max);
-    else
-       printf("-1");
+    // else
+    //    printf("-1");
     return 0;
 }
