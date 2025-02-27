@@ -13,8 +13,9 @@ int main(){
         if(arr[i]%2==0){
             if(max<arr[i]){
                 max=arr[i];
-                valid=1;
+                
             }
+            valid=1;
         }
 
     }
