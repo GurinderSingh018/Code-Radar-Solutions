@@ -11,17 +11,17 @@ int main(){
     int max=0;
     for(int i=0;i<n;i++){
         if(arr[i]%2==0){
-            if(max<arr[i]){
+            if(max<(int)arr[i]){
                 max=arr[i];
                 
             }
-            // valid=1;
+            valid=1;
         }
 
     }
-    // if(valid)
+    if(valid)
        printf("%d",max);
-    // else
-    //    printf("-1");
+    else
+       printf("-1");
     return 0;
 }
