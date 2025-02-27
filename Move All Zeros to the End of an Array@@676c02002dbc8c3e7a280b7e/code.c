@@ -13,7 +13,7 @@ int main(){
         int temp;
         if(arr[i]==0){
             temp=arr[n-c];
-            arr[n-c]=arr[i];
+            arr[n-c]=0;
             arr[i]=temp;
             c++;
         }
