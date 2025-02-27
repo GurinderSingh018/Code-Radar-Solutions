@@ -10,7 +10,7 @@ int main() {
     }
     int valid=0;
     int max1=INT_MIN;
-    int max2;
+    int max2=0;
     for(int i=0;i<n;i++){
         if(arr[i]>max1){
             max2=max1;
