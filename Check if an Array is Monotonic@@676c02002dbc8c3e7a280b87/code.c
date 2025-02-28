@@ -18,12 +18,13 @@ int main(){
                 valid=1;
             }
         }
-    }
+        }
     if(valid){
         printf("YES");
     }
     else{
         printf("NO");
+    }
     }
     return 0;
 }
