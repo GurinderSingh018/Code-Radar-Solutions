@@ -14,10 +14,10 @@ int main(){
         }
     }
     if(valid){
-        printf("Yes");
+        printf("YES");
     }
     else{
-        printf("No");
+        printf("NO");
     }
     return 0;
 }
