@@ -8,13 +8,13 @@ int main(){
         scanf("%d",&arr[i]);
 
     }
-    int c=1;
+    int c=0;
     for(int i=0;i<n;i++){
         int temp;
-        if(arr[i]==0){
-            temp=arr[n-c];
-            arr[n-c]=0;
-            arr[i]=temp;
+        if(arr[i]!=0){
+            temp=arr[i];
+            arr[i]=arr[c];
+            arr[c]=arr[i];
             c++;
         }
     }
