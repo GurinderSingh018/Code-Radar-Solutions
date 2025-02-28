@@ -19,12 +19,13 @@ int main(){
             }
         }
         }
+    }
     if(valid){
         printf("YES");
     }
     else{
         printf("NO");
     }
-    }
+    
     return 0;
 }
