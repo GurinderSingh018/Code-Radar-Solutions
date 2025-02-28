@@ -19,6 +19,9 @@ int main(){
                 valid=1;
             }
         }
+        else{
+            valid=0;
+        }
     }
     if(valid){
         printf("YES");
