@@ -1,6 +1,6 @@
 #inlcude<stdio.h>
 
-int amin(){
+int main(){
     int N,K;
     scanf("%d %d",&N,&K);
     int arr[N];
