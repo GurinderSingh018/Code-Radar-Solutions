@@ -7,22 +7,18 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int valid=0;
+    int inc=1,dec=1;
     for(int i=0;i<n-1;i++){
         
         if(arr[i]<=arr[i+1]){
-            valid=1;
-        }
-        
-        
+            dec=0;
+        }        
         if(arr[i]>=arr[i+1]){
-                valid=1;
-            }
-        
-        
+            inc=0;
+        }      
     
     }
-    if(valid||n==1){
+    if(inc||dec||n==1){
         printf("YES");
     }
     else{
