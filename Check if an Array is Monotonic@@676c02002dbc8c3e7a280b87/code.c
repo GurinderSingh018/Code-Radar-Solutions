@@ -22,7 +22,7 @@ int main(){
         
     
     }
-    if(valid){
+    if(valid||n==1){
         printf("YES");
     }
     else{
