@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int findUnsortedSubarray
+int findUnsortedSubarray()
 
 int main(){
     int t;
@@ -13,6 +13,6 @@ int main(){
             scanf("%d",&arr[i]);
 
         }
-        printf("%d/n",)
+        printf("%d/n",findUnsortedSubarray(arr),n);
     }
 }
