@@ -9,7 +9,7 @@ int printPrimesInRange(int a,int b){
     
     for(int i=0;i<n;i++){ 
         int count=0;
-        for(int j=1;j<arr[i];j++){
+        for(int j=1;j<=arr[i];j++){
             if(arr[i]%j==0){
                 count++;
             }
