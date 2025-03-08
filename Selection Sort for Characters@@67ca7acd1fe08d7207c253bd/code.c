@@ -6,7 +6,7 @@ int selectionSort(int arr[],int n){
             if(arr[j]>arr[j+1]){
                 int temt=arr[j];
                 arr[j]=arr[j+1];
-                arr[j+1]=temtl;
+                arr[j+1]=temt;
             }
         }
     }
