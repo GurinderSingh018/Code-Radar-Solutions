@@ -2,11 +2,15 @@
 
 int binarySearch(int arr[],int n,int target){
     int i;
+    int valid=0;
     for(i=0;i<n;i++){
         if(arr[i]==target){
-            
+         valid=1; 
          break;
         }
     }
-    return i;
+    if(valid)
+       return i;
+    else
+       return -1;
 }
