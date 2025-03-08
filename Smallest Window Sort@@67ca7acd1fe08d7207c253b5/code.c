@@ -1,20 +1,16 @@
 #include <stdio.h>
 
 int findUnsortedSubarray(int arr[],int n){
-    int valid=0;
+    
     int i;
+    int count=0;
     for(i=0;i<n-1;i++){
-        if(arr[i]>arr[i+1]){
-            valid=1;
-            break;
+        if(arr[i]<=arr[i+1]){
+            
+            count++;
         }
       
     }
-    if(valid){
-        return n-i;
-    }
-    else{
-        return 0;
-    }
+    return n-count;
 }
 
