@@ -6,7 +6,7 @@ int printPrimesInRange(int a,int b){
     for(int i=0;i<n;i++){
         arr[i]=a+i;
     }
-    
+    int valid=0;
     for(int i=0;i<n;i++){ 
         int count=0;
         for(int j=1;j<=arr[i];j++){
@@ -16,8 +16,12 @@ int printPrimesInRange(int a,int b){
         }
         if(count==2){
             printf("%d ",arr[i]);
+            valid=1;
         }
        
+    }
+    if(valid==0){
+        printf("No prime numbers");
     }
                         
     
