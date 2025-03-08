@@ -7,6 +7,9 @@ int findUnsortedSubarray(int arr[],int n){
             return n-i-1;
             break;
         }
+        else{
+            return 0;
+        }
     }
 }
 
