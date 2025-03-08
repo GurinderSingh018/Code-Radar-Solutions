@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int binarySearch(int arr[],int n,int target){
+int searchInRotatedArray(int arr[],int n,int target){
     int i;
     int valid=0;
     if(arr[0]==arr[1]){
