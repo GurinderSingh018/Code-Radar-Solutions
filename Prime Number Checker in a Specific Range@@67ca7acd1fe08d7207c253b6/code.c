@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void PrimesInRange(int a,int b){
+void printPrimesInRange(int a,int b){
      int n=b-a+1;
      int arr[n];
      for(int i=0;i<n;i++){
