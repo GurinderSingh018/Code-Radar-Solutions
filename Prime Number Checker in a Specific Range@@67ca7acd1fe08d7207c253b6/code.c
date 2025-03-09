@@ -1,29 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int printPrimesInRange(int a,int b){
-    int n=b-a+1;
-    int arr[n];
-    for(int i=0;i<n;i++){
+void PrimesInRange(int a,int b){
+     int n=b-a+1;
+     int arr[n];
+     for(int i=0;i<n;i++){
         arr[i]=a+i;
-    }
-    int valid=0;
-    for(int i=0;i<n;i++){ 
-        int count=0;
-        for(int j=1;j<=arr[i];j++){
+     }
+     int valid=0;
+    for(int i=0;i<n;i++){
+       int count=0;
+        for(int j=1;j<=arr[i];i++){
             if(arr[i]%j==0){
                 count++;
+                
             }
         }
         if(count==2){
-            printf("%d ",arr[i]);
             valid=1;
+            printf("%d ",arr[i]);
         }
-       
-    }
-    if(valid==0){
-        printf("No prime numbers");
-    }
-                        
-    
-
+     }
+     if(valid==0){
+        printf("No prime numbers")
+     }
 }
