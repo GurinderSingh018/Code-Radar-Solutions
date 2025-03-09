@@ -16,8 +16,9 @@ void printPrimesInRange(int a,int b){
             }
         }
         if(count==2){
-            valid=1;
+            
             printf("%d ",arr[i]);
+            valid=1;
         }
      }
      if(valid==0){
