@@ -9,8 +9,8 @@ int main() {
         scanf("%d",&arr[i]);
     }
     int valid=0;
-    int max1=arr[0];
-    int max2=arr[0];
+    int max1=INT_MIN;
+    int max2=INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i]>max1){
             max2=max1;
