@@ -9,19 +9,19 @@ int main(){
     }
     int min1=INT_MAX;
     int min2=INT_MAX;
-    int valid=0;
+    
     for(int i=0;i<n;i++){
         if(arr[i]<min1){
             min2=min1;
             min1=arr[i];
-            valid=1;
+            
         }
         
     }
-    if(valid)
-      printf("%d",min2);
-    else
+    if(min2==INT_MAX)
       printf("-1");
+    else
+      printf("%d",min2);
 
     
 }
