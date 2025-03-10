@@ -1,10 +1,18 @@
 #include<stdio.h>
 #include<string.h>
+void remove_newline(char *str) {
+    size_t len = strlen(str);
+    if (len > 0 && str[len - 1] == '\n') {
+        str[len - 1] = '\0'; 
+    }
+}
 int main(){
     char str[50];
     char str2[50];
     fgets(str,sizeof(str),stdin);
     fgets(str2,sizeof(str2),stdin);
+    remove_newline(str);
+    remove_newline(str2);
     int valid=0;
     for(int i=0;i<strlen(str);i++){
         for(int j=0;j<strlen(str2);j++){
@@ -17,7 +25,7 @@ int main(){
             break;
         }
     }
-    if(valid==1){
+    if(valid){
         printf("Yes");
     }
     else{
