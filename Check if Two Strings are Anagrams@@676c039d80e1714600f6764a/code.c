@@ -21,7 +21,7 @@ int main(){
                 break;
             }
         }
-        if(valid==0){
+        if(valid){
             break;
         }
     }
