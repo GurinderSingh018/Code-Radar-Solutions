@@ -5,7 +5,7 @@ int main(){
     fgets(str,sizeof(str),stdin);
     char str1[50];
     for(int i=0;i<strlen(str);i++){
-        if(str[i]==" "){
+        if(str[i]==' '){
             i=i-1;
             continue;
             
