@@ -5,6 +5,6 @@ int main(){
     fgets(str,sizeof(str),stdin);
     scanf("%s",&str);
     for(int i=strlen(str)-1;i>=0;i--){
-        printf("%c",arr[i]);
+        printf("%c",str[i]);
     }
 }
