@@ -16,6 +16,9 @@ int main(){
             min1=arr[i];
             
         }
+        else if(arr[i]>min1 && arr[i]<min2){
+            min2=arr[i];
+        }
         
     }
     if(min2==INT_MAX)
