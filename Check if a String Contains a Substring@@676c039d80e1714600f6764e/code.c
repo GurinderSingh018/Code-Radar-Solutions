@@ -9,8 +9,9 @@ int main(){
     int valid=0;
     for(int i=0;i<strlen(str1);i++){
          for(int j=0;j<strlen(str);j++){
-               if(str[i]==str1[j]){
+               if(str1[i]==str[j]){
                   valid=1;
+                  break;
                }
          }
          if(valid==0){
