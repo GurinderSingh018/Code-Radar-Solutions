@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include<limits.h>
 
 int main() {
     int n;
@@ -8,22 +8,22 @@ int main() {
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int valid=0;
-    int max1=arr[0];
-    int max2=arr[0];
+    
+    int max1=INT_MIN;
+    int max2=INT_MIN;
     for(int i=0;i<n;i++){
         if(arr[i]>max1){
             max2=max1;
-            max1=arr[i];
-            valid=1;
+            max1=arr[i];           
         }
+        
     }
     
-   if(valid){
-    printf("%d",max2);
+   if(max2==INT_MIN){
+    printf("-1");
    }
    else{
-    printf("-1");
+    printf("%d",max2);
    }
   
     return 0;
