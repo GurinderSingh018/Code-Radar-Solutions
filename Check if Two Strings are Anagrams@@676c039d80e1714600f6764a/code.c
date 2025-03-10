@@ -7,14 +7,14 @@ int main(){
     fgets(str,sizeof(str2),stdin);
     int valid=0;
     for(int i=0;i<strlen(str);i++){
-        for(int j=0;j<strlen(str);j++){
+        for(int j=0;j<strlen(str2);j++){
             if(str[i]==str2[j]){
                 valid=1;
                 break;
             }
         }
     }
-    if(valid==1){
+    if(valid){
         printf("Yes");
     }
     else{
