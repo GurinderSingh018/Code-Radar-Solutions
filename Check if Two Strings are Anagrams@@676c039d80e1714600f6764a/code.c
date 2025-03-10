@@ -13,6 +13,9 @@ int main(){
                 break;
             }
         }
+        if(valid==0){
+            break;
+        }
     }
     if(valid){
         printf("Yes");
