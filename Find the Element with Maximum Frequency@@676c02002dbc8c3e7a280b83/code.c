@@ -33,6 +33,6 @@ int main(){
             break;
          }
        }
-       printf("%d",f[k]);
+       printf("%d",arr[k]);
     }
 }
