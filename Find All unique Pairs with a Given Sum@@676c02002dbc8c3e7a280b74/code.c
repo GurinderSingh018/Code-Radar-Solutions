@@ -15,6 +15,7 @@ int main(){
             int sum=arr[i]+arr[j];
             if(sum==T){
                 printf("%d %d\n",arr[i],arr[j]);
+                break;
             }
         
         }
