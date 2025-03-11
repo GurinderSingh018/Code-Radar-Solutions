@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[50];
-    scanf("%s",&str);
+    scanf("%s",str);
     int n=strlen(str);
     int arr[n];
     for(int i=0;i<n;i++){
