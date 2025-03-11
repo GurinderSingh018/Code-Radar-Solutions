@@ -24,7 +24,7 @@ int main(){
     }
     for(int i=0;i<n;i++){
         if(arr[i]!=0){
-            printf("%c: %d",str[i],arr[i]);
+            printf("%c: %d\n",str[i],arr[i]);
         }
     }
 }
