@@ -14,7 +14,7 @@ int main(){
         if(arr[i]=0){
             continue;
         }
-        for(int j=i+1;j<n;j++){
+        for(int j=i;j<n;j++){
             if(str[i]==str[j]){
                 occ++;
                 arr[j]=0;
