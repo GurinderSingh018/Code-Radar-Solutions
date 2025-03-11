@@ -9,7 +9,7 @@ int main(){
         arr[i]=-1;
     }
     int occ=0;
-    for(int i=0;i<n,i++){
+    for(int i=0;i<n;i++){
         occ=0;
         if(arr[i]=0){
             continue;
