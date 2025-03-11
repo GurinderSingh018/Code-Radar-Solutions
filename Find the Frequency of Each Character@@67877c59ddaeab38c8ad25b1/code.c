@@ -6,7 +6,7 @@ int main(){
     int n=strlen(str);
     int arr[n];
     for(int i=0;i<n;i++){
-        arr[i]=-1;
+        arr[i]=1;
     }
     int occ=0;
     for(int i=0;i<n;i++){
