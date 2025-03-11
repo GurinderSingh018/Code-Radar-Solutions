@@ -11,7 +11,7 @@ int main(){
     
     for(int i=0;i<n;i++){
       int occ=1;
-        if(arr[i]=0){
+        if(arr[i]==0){
             continue;
         }
         for(int j=i+1;j<n;j++){
