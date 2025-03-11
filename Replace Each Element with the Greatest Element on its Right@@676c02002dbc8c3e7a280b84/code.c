@@ -7,15 +7,15 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0;i<n;i++){
-        
-        for(int j=i+1;j<n;j++){
-            if(arr[i]<arr[j]){
-                arr[i]=arr[j];
-            }
-        }        
+    int maxRight = -1;  
+    for (int i = n - 1; i >= 0; i--) {
+        int temp = arr[i];  
+        arr[i] = maxRight;  
+        if (temp > maxRight) {
+            maxRight = temp;  
+        }
     }
-    arr[n-1]=-1;
+
      for(int i=0;i<n;i++){
         printf("%d ",arr[i]);
     }
