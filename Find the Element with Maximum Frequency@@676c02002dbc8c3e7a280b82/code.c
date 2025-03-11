@@ -1,32 +1,34 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <limits.h>
 
-int main(){
+#define MAX_VAL 100001 
+
+int main() {
     int n;
-    scanf("%d",&n);
+    scanf("%d", &n);
+    
     int arr[n];
-    for(int i=0;i<n;i++){
-        scanf("%d",&arr[i]);
-       
+    int freq[MAX_VAL] = {0}; 
+
+ 
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+        freq[arr[i]]++;
     }
-    int freq=0;
-    int max_freq=0;
-    int max;
-        
-    for(int i=0;i<n;i++){
-        freq=0;
-       
-       for(int j=i+1;j<n;j++){
-        
-        if(arr[i]==arr[j]){
-            freq++;
+
+    int max_freq = 0;
+    int min_element = INT_MAX;
+
+   
+    for (int i = 0; i < n; i++) {
+        if (freq[arr[i]] > max_freq) {
+            max_freq = freq[arr[i]];
+            min_element = arr[i];
+        } else if (freq[arr[i]] == max_freq && arr[i] < min_element) {
+            min_element = arr[i]; 
         }
-       }
-       if(max_freq<freq){
-        max_freq=freq;
-        max=arr[i];
-       }
-       
     }
-    printf("%d",max);
+
+    printf("%d\n", min_element);
     return 0;
 }
