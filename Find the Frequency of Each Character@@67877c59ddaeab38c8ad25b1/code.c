@@ -10,11 +10,11 @@ int main(){
     }
     
     for(int i=0;i<n;i++){
-      int occ=0;
+      int occ=1;
         if(arr[i]=0){
             continue;
         }
-        for(int j=i;j<n;j++){
+        for(int j=i+1;j<n;j++){
             if(str[i]==str[j]){
                 occ++;
                 arr[j]=0;
