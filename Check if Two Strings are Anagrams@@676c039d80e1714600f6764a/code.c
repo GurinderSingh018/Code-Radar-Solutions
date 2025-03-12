@@ -23,6 +23,8 @@ int main(){
     int n=strlen(str1);
     sort(str1,n);
     sort(str2,n);
+        str1[strcspn(str1, "\n")] = '\0';
+    str2[strcspn(str2, "\n")] = '\0';
     int valid=0;
     for(int i=0;i<n;i++){
         if(str1[i]==str2[i]){
