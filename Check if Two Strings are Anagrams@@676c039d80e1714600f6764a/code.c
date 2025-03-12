@@ -11,8 +11,7 @@ int main(){
     char str2[50];
     fgets(str,sizeof(str),stdin);
     fgets(str2,sizeof(str2),stdin);
-    remove_newline(str);
-    remove_newline(str2);
+    
     int valid=0;
     for(int i=0;i<strlen(str);i++){
         for(int j=0;j<strlen(str2);j++){
