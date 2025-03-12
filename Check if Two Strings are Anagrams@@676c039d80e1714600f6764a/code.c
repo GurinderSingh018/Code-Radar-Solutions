@@ -28,6 +28,9 @@ int main(){
         if(str1[i]==str2[i]){
             valid=1;
         }
+        if(valid==0){
+            break;
+        }
     }
     if(valid){
         printf("Yes");
