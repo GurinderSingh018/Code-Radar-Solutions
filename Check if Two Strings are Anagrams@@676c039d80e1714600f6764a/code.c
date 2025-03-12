@@ -24,20 +24,24 @@ int main(){
     sort(str1,n);
     sort(str2,n);
        
-    int valid=0;
-    for(int i=0;i<n;i++){
-        if(str1[i]==str2[i]){
-            valid=1;
-        }
-        else if(valid==0){
-            break;
-        }
-    }
-    if(valid){
-        printf("Yes");
-    }
-    else{
-        printf("No");
-    }
+    // int valid=0;
+    // for(int i=0;i<n;i++){
+    //     if(str1[i]==str2[i]){
+    //         valid=1;
+    //     }
+    //     else if(valid==0){
+    //         break;
+    //     }
+    // }
+    // if(valid){
+    //     printf("Yes");
+    // }
+    // else{
+    //     printf("No");
+    // }
+    if(strcmp(str1,str2)==0)
+         printf("Yes");
+    else
+        printf("No")
     return 0;
 }
