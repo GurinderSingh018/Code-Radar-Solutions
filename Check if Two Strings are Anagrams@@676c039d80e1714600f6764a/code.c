@@ -17,9 +17,10 @@ void sort(char str[],int n){
 int main(){
     char str1[50];
     char str2[50];
-    int n=strlen(str1);
+    
     fgets(str1,sizeof(str1),stdin);
     fgets(str2,sizeof(str2),stdin);
+    int n=strlen(str1);
     sort(str1,n);
     sort(str2,n);
     int valid=0;
