@@ -8,14 +8,15 @@ int main(){
     int i;
     for(i=0;i<n-1;i++){
          for(int j=i+1;j<n;j++){
-            if(str[i]==str[j]){
-                valid=0;
+            if(str[i]!=str[j]){
+                valid=1;
                 break;
             }
          }
-         if(valid=1){
+         if(valid){
             break;
          }
+         
     }
     printf("%c",str[i]);
     return 0;
