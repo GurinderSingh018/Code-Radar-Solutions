@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void sort(char str[],n){
+void sort(char str[],int n){
     
     for(int i=0;i<n;i++){
         for(int j=i+1;i<n;i++){
