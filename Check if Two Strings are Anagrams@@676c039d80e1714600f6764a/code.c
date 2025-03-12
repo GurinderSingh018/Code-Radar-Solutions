@@ -42,6 +42,6 @@ int main(){
     if(strcmp(str1,str2)==0)
          printf("Yes");
     else
-        printf("No")
+        printf("No");
     return 0;
 }
