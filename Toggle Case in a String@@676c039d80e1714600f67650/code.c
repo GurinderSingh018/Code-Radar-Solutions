@@ -11,7 +11,7 @@ int main(){
             str[i]=tolower(str[i]);
         }
         else if((int)str[i]>=97){
-            str[i]=tolower(str[i]);
+            str[i]=toupper(str[i]);
         }
     }
     printf("%s",str);
