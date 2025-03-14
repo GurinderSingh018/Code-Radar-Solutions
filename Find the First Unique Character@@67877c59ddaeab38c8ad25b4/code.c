@@ -11,6 +11,10 @@ int main(){
             if(str[i]!=str[j]){
                 valid=1;
             }
+            else{
+                valid=0;
+                break;
+            }
         }
         if(valid){
             break;
