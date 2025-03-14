@@ -20,5 +20,8 @@ int main(){
             break;
         }
     }
-    printf("%c",str[i]);
+    if(valid)
+       printf("%c",str[i]);
+    else
+       printf("-");
 }
