@@ -18,8 +18,8 @@ int main(){
     char str1[50];
     char str2[50];
     
-    fgets(str1,sizeof(str1),stdin);
-    fgets(str2,sizeof(str2),stdin);
+    scanf("%s",&str1);
+    scanf("%s",&str2);
     int n=strlen(str1);
     sort(str1,n);
     sort(str2,n);
