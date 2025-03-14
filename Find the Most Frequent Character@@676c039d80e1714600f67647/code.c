@@ -9,7 +9,7 @@ int main(){
     char c;
     for(int i=0;i<n;i++){
         count=0;
-        for(int j=i+1;j<n;j++){
+        for(int j=0;j<n;j++){
             if(str[i]==str[j]){
                 count++;
                 
@@ -18,6 +18,9 @@ int main(){
         if(maxcount<count){
             maxcount=count;
             c=str[i];
+        }
+        else if(maxcount==count){
+
         }
     }
     printf("%c",c);
