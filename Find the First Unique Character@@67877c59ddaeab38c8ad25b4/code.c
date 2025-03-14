@@ -11,7 +11,7 @@ int main(){
     }
     for(int i=0;i<n-1;i++){
         int count=0;
-        for(int j=i+1;j<n;j++){
+        for(int j=i;j<n;j++){
             if(str[i]==str[j]){
                 count++;
                 freq[i]=count;
