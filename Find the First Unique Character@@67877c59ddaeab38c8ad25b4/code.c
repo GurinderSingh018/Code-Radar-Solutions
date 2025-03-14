@@ -22,12 +22,10 @@ int main(){
     for(int i=0;i<n;i++){
         if(freq[i]==1){
             printf("%c",str[i]);
-            break;
+            return 0;
         }
-        else{
-            printf("-");
-            break;
-        }
+        
     }
-    return 0;
+    printf("-");
+    
 }
