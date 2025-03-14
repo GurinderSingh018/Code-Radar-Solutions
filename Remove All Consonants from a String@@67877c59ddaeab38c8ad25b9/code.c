@@ -9,7 +9,7 @@ int main(){
     int j=0;
     for(int i=0;i<n;i++){
         int a=tolower(str[i]);
-        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a==' '||a!=isalpha(str[i])){
+        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a==' '|| !isalpha(str[i])){
             str2[j]=str[i];
             j++;
         }
