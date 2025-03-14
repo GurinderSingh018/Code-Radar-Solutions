@@ -8,7 +8,7 @@ int main(){
     int j=0;
     for(int i=0;i<n;i++){
         int a=str[i];
-        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a==' '||a=(int)){
+        if(a=='a'||a=='e'||a=='i'||a=='o'||a=='u'||a==' '||a=='A'||a=='E'||a=='I'||a=='O'||a=='U'){
             str2[j]=str[i];
             j++;
         }
