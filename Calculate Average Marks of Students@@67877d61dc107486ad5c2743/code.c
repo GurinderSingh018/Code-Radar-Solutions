@@ -19,6 +19,6 @@ int main(){
         
         sum+=std[i].marks;
     }
-    printf("Average Marks: %.2f",sum/(float)n);
+    printf("Average Marks: %.2f",sum/n);
     return 0;
 }
