@@ -17,6 +17,6 @@ int main(){
     for(int i=0;i<n;i++){
         printf("Roll Number: %d, ",std[i].roll);
         printf("Name: %s, ",std[i].name);
-        printf("Marks: %f/n",std[i].marks);
+        printf("Marks: %.2f\n",std[i].marks);
     }
 }
