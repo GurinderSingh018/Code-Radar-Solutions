@@ -19,4 +19,5 @@ int main(){
         printf("Name: %s, ",std[i].name);
         printf("Marks: %.2f\n",std[i].marks);
     }
+    return 0;
 }
