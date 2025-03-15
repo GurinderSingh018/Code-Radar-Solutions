@@ -18,7 +18,7 @@ int main(){
     float min=0;
     int a;
     for(int i=0;i<n;i++){
-        if(std[i].marks<min){
+        if(std[i].marks>min){
             min=std[i].marks;
             a=i;
         }
