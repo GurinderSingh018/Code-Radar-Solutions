@@ -10,9 +10,9 @@ int main(){
     scanf("%d",&n);
     struct Student std[n];
     for(int i=0;i<n;i++){
-        std[i].roll=scanf("%d",&std[i].roll);
-        std[i].name[50]=scanf("%s",&std[i].name);
-        std[i].marks=scanf("%f",&std[i].marks);
+        scanf("%d",&std[i].roll);
+        scanf("%s",std[i].name);
+        scanf("%f",&std[i].marks);
     }                                       
     for(int i=0;i<n;i++){
         printf("Roll Number: %d, ",std[i].roll);
