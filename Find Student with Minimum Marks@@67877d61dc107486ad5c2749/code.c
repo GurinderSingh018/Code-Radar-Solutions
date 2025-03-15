@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<limits.h>
 struct Student{
     int roll;
     char name[50];
@@ -15,7 +15,7 @@ int main(){
        scanf("%s",std[i].name);
        scanf("%f",&std[i].marks);
     }
-    float min=0;
+    float min=INT_MAX;
     int a;
     for(int i=0;i<n;i++){
         if(std[i].marks<min){
