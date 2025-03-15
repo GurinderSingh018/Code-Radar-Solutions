@@ -23,5 +23,5 @@ int main(){
             a=i;
         }
     }
-    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %f",std[a].roll,std[a].name,std[a].marks);
+    printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f",std[a].roll,std[a].name,std[a].marks);
 }
