@@ -15,8 +15,8 @@ int main(){
         std[i].marks=scanf("%f",&std[i].marks);
     }                                       
     for(int i=0;i<n;i++){
-        printf("Roll Number: %d, "std[i].roll);
-        printf("Name: %s, "std[i].name);
-        printf("Marks: %f, "std[i].marks);
+        printf("Roll Number: %d, ",std[i].roll);
+        printf("Name: %s, ",std[i].name);
+        printf("Marks: %f, ",std[i].marks);
     }
 }
