@@ -32,7 +32,7 @@ int main(){
     for(int i=0;i<n;i++){
        for(int j=0;j<n;j++){
         if(arr[i]==std[j].marks){
-            printf("Roll Number: %d, Name: %s, Marks: %.2f",std[j].roll,std[j].name,std[j].marks);
+            printf("Roll Number: %d, Name: %s, Marks: %.2f\n",std[j].roll,std[j].name,std[j].marks);
         }
        }
     }
