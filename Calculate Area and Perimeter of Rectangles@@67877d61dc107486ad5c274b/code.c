@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-struct rectangle
+struct Rectangle
 {
     int length;
     int breadth;
@@ -8,7 +8,7 @@ struct rectangle
 int main(){
     int n;
     scanf("%d",&n);
-   struct rectangle side[n];
+   struct Rectangle side[n];
    for(int i=0;i<n;i++){
     scanf("%d %d",side[i].length,side[i].breadth);
    }
