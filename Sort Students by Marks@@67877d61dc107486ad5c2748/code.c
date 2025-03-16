@@ -30,7 +30,11 @@ int main(){
     sort(arr,n);
                                          
     for(int i=0;i<n;i++){
-       printf("%f\n",arr[i]);
+       for(int j=0;j<n;j++){
+        if(arr[i]==std[j].marks){
+            printf("Roll Number: %d, Name: %s, Marks: %.2f",std[j].roll,std[j].name,std[j].marks);
+        }
+       }
     }
     
     return 0;
