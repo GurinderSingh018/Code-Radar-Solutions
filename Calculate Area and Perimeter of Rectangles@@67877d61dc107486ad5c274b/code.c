@@ -10,7 +10,7 @@ int main(){
     scanf("%d",&n);
    struct Rectangle side[n];
    for(int i=0;i<n;i++){
-    scanf("%d %d",side[i].length,side[i].breadth);
+    scanf("%d %d",&side[i].length,&side[i].breadth);
    }
    for(int i=0;i<n;i++){
     int a=side[i].length;
