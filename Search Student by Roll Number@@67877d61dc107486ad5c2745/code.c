@@ -18,7 +18,7 @@ int main(){
     int m;
     scanf("%d",&m);
     int i;
-    int valid=0
+    int valid=0;
     for(i=0;i<n;i++){
         if(std[i].roll==m){
             valid =1;
