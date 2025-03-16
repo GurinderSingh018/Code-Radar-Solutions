@@ -11,7 +11,7 @@ int main(){
     scanf("%d",&n);
     struct Book info[n];
     for(int i=0;i<n;i++){
-        scanf("%s %s %d",info[i].name,info[i].author,&info[i].price);
+        scanf("%s %s %f",info[i].name,info[i].author,&info[i].price);
     }
     float p;
     scanf("%d",&p);
