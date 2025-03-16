@@ -14,13 +14,13 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d %s %f",&std[i].roll,std[i].name,&std[i].marks);
         if(std[i].marks>=85.0) {
-          std[i].grade="A";
+          std[i].grade='A';
         }  
         else if(std[i].marks<85.0 && std[i].marks>=70.0) {
-          std[i].grade="B";
+          std[i].grade='B';
         }
         else{
-          std[i].grade="C";
+          std[i].grade='C'";
         }           
     }
     for(int i=0;i<n;i++){
