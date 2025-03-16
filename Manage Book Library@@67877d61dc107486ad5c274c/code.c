@@ -13,7 +13,7 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%s %s %d",info[i].name,info[i].author,&info[i].price);
     }
-    int p;
+    float p;
     scanf("%d",&p);
     for(int i=0;i<n;i++){
         if(info[i].price>p){
