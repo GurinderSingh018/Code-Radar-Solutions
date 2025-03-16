@@ -5,37 +5,31 @@ struct Student{
     char name[50];
     float marks;
 };
-void sort(float arr[],int n){
-       for(int i=0;i<n;i++){
-        for(int j=0;j<n-1;j++){
-            if(arr[j]<arr[j+1]){
-                int temp=arr[j+1];
-                arr[j+1]=arr[j];
-                arr[j]=temp;
-            }
-        }
-       }
-}
+
 int main(){
     int n;
     scanf("%d",&n);
     struct Student std[n];
-    float arr[n];
+    
     for(int i=0;i<n;i++){
         scanf("%d",&std[i].roll);
         scanf("%s",std[i].name);
         scanf("%f",&std[i].marks);
-        arr[i]=std[i].marks;
+        
     }
-    sort(arr,n);
+   
                                          
     for(int i=0;i<n;i++){
-       for(int j=0;j<n;j++){
-        if(arr[i]==std[j].marks){
-            printf("Roll Number: %d, Name: %s, Marks: %.2f\n",std[j].roll,std[j].name,std[j].marks);
+       for(int j=0;j<n-i-1;j++){
+        if(std[j].marks<std[j+1].marks){
+            struct Student temp = std[j+1];
+            std[j+1]=std[j];
+            std[j]=temp;
         }
        }
     }
-    
+    for(int j=0;j<n;j++){
+    printf("Roll Number: %d, Name: %s, Marks: %.2f\n",std[j].roll,std[j].name,std[j].marks);
+    }
     return 0;
 }
