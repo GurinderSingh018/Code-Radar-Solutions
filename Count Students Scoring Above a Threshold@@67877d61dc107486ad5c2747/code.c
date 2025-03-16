@@ -18,10 +18,10 @@ int main(){
     scanf("%f",&m);
     int count=0;
     for(int i=0;i<n;i++){
-        if(std[i].roll>n){
+        if(std[i].marks>n){
             count++;
         }
     }
-    printf("%d",count);
+    printf("Count of students scoring above 90.00: %d",count);
     return 0;
 }
