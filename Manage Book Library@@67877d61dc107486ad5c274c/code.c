@@ -4,7 +4,7 @@ struct Book{
     char name[50];
     char author[50];
     float price;
-}
+};
 
 int main(){
     int n;
