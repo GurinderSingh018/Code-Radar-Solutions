@@ -14,10 +14,8 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d",&std[i].roll);
         scanf("%s",std[i].name);
-        scanf("%f",&std[i].marks);
-        
+        scanf("%f",&std[i].marks);        
     }
-   
                                          
     for(int i=0;i<n;i++){
        for(int j=0;j<n-i-1;j++){
@@ -29,7 +27,7 @@ int main(){
        }
     }
     for(int j=0;j<n;j++){
-    printf("Roll Number: %d, Name: %s, Marks: %.2f\n",std[j].roll,std[j].name,std[j].marks);
+        printf("Roll Number: %d, Name: %s, Marks: %.2f\n",std[j].roll,std[j].name,std[j].marks);
     }
     return 0;
 }
