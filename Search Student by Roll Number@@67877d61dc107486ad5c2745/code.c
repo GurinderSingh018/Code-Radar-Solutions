@@ -20,7 +20,7 @@ int main(){
     int i;
     for(i=0;i<n;i++){
         if(std[i].roll==m){
-            printf("Roll Number: %d, Name:%s, Marks: %f",std[i].roll,std[i].name,std[i].marks);
+            printf("Roll Number: %d, Name:%s, Marks: %.2f",std[i].roll,std[i].name,std[i].marks);
             return 0;
         }
     }
