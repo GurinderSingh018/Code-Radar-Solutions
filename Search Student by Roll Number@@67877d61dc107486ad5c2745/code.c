@@ -18,10 +18,17 @@ int main(){
     int m;
     scanf("%d",&m);
     int i;
+    int valid=0
     for(i=0;i<n;i++){
         if(std[i].roll==m){
-            printf("Roll Number: %d, Name: %s, Marks: %.2f",std[i].roll,std[i].name,std[i].marks);
-            return 0;
+            valid =1;
+            break;
         }
+        
     }
+    if(valid)
+    printf("Roll Number: %d, Name: %s, Marks: %.2f",std[i].roll,std[i].name,std[i].marks);
+    else
+    printf("Student not found");
+    return 0;
 }
