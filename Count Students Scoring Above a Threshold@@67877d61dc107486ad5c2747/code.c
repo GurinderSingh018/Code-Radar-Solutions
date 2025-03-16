@@ -18,7 +18,7 @@ int main(){
     scanf("%f",&m);
     int count=0;
     for(int i=0;i<n;i++){
-        if(std[i].marks>n){
+        if(std[i].marks>m){
             count++;
         }
     }
