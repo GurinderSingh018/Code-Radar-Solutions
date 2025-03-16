@@ -19,7 +19,7 @@ int main(){
         
         sum+=std[i].marks;
     }
-    printf("Total Marks: %.2f",sum);
+    printf("Total Marks: %.2f\n",sum);
     printf("Average Marks: %.2f",sum/n);
     return 0;
 }
