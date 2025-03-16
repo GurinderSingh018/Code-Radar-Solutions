@@ -17,7 +17,7 @@ int main(){
     scanf("%d",&p);
     for(int i=0;i<n;i++){
         if(info[i].price>p){
-           printf("Title: %s, Author: %s, Price: %.2f\n",info[i].name,info[i].author,info[i].price)
+           printf("Title: %s, Author: %s, Price: %.2f\n",info[i].name,info[i].author,info[i].price);
         }
     }
 }
