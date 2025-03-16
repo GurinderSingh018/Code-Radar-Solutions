@@ -20,7 +20,7 @@ int main(){
           std[i].grade='B';
         }
         else{
-          std[i].grade='C'";
+          std[i].grade='C';
         }           
     }
     for(int i=0;i<n;i++){
