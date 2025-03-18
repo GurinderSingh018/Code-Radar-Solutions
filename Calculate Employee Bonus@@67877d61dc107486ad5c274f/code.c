@@ -1,31 +1,29 @@
-#include <stdio.h>
-
-struct Employee {
+#include<stdio.h>
+struct salary{
     int id;
-    char name[10];
+    char str[50];
     int salary;
 };
 
-int main() {
-    int len;
-    scanf("%d", &len);
-    struct Employee employee[len];
-
-    for (int i = 0; i < len; i++) {
-        scanf("%d %s %d", &employee[i].id, employee[i].name, &employee[i].salary);
+int main(){
+    int n;
+    scanf("%d",&n);
+    struct salary sal[n];
+    for(int i=0;i<n;i++){
+        scanf("%d %s %d",&sal[i].id,sal[i].str,&sal[i].salary);
     }
-
-    for (int i = 0; i < len; i++) {
+    
+    for(int i=0;i<n;i++){
         float bonus;
-        if (employee[i].salary >= 50000) {
-            bonus= 0.05*employee[i].salary;
-        } else {
-            bonus= 0.1*employee[i].salary;
+        if(sal[i].salary>=50000){
+            bonus= 0.05*sal[i].salary;
+            
         }
-        
-
-        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n", employee[i].id, employee[i].name,bonus);
+        else{
+            bonus=0.1*sal[i].salary;
+           
+        }
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",sal[i].id,sal[i].str,bonus);
     }
-
     return 0;
 }
