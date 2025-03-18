@@ -4,7 +4,7 @@
 struct subscription{
     char name[15];
     char type[44];
-    int price;
+    float price;
 };
 
 int main(){
@@ -12,7 +12,7 @@ int main(){
     scanf("%d",&n);
     struct subscription mov[n];
     for(int i=0;i<n;i++){
-        scanf("%s %s %d",mov[i].name,mov[i].type,&mov[i].price);
+        scanf("%s %s %f",mov[i].name,mov[i].type,&mov[i].price);
     }
     float x=0,y=0,z=0;
     int a=0,b=0,c=0;
