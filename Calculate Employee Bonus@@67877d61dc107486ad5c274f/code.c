@@ -15,7 +15,7 @@ int main(){
     
     for(int i=0;i<n;i++){
         float bonus;
-        if(sal[i].salary>50000){
+        if(sal[i].salary>=50000){
             bonus= sal[i].salary*0.10;
             
         }
