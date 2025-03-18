@@ -4,7 +4,7 @@ struct Vehicle{
     char num[10];
     char type[10];
     int amount;
-}
+};
 
 int main(){
     int n;
@@ -13,12 +13,12 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%s %s %d",veh[i].num,veh[i].type,&veh[i].amount);
     }
-    float X=0;Y=0,Z=0;
+    float X=0,Y=0,Z=0;
     for(int i=0;i<n;i++){
         if(veh[i].type=='Car'){
             X=X+veh[i].amount;
         }
-        else if(veh[i].type=='Bike'){
+        else if(veh[i].type=='Truck'){
             Y=Y+veh[i].amount;
         }
         else{
