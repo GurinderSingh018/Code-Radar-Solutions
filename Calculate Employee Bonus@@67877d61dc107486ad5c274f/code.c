@@ -3,7 +3,7 @@ struct salary{
     int id;
     char str[50];
     int salary;
-}
+};
 
 int main(){
     int n;
