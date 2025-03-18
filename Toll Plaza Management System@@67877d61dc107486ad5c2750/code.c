@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 struct Vehicle{
     char num[10];
     char type[10];
@@ -15,10 +15,10 @@ int main(){
     }
     float X=0,Y=0,Z=0;
     for(int i=0;i<n;i++){
-        if(veh[i].type=="Car"){
+        if(strcmp(veh[i].type,"Car")==0){
             X=X+veh[i].amount;
         }
-        else if(veh[i].type=="Truck"){
+        else if(strcmp(veh[i].type,"Truck")==0){
             Y=Y+veh[i].amount;
         }
         else{
