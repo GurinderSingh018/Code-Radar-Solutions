@@ -17,13 +17,13 @@ int main(){
     float x=0,y=0,z=0;
     for(int i=0;i<n;i++){
         if(strcmp(mov[i].type,"Standard")==0){
-            x=mov[i].price+x;
+            x+=mov[i].price;
         }
         else if(strcmp(mov[i].type,"Premium")==0){
-            y=mov[i].price+y;
+            y+=mov[i].price;
         }
         else{
-            z=z+mov[i].type;
+            z+=mov[i].price;
         }
     }
     printf("Standard: %.2f, Premium: %.2f, VIP: %.2f",x,y,z);
