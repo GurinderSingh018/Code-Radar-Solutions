@@ -15,10 +15,10 @@ int main(){
     }
     float X=0,Y=0,Z=0;
     for(int i=0;i<n;i++){
-        if(veh[i].type=='Car'){
+        if(veh[i].type=="Car"){
             X=X+veh[i].amount;
         }
-        else if(veh[i].type=='Truck'){
+        else if(veh[i].type=="Truck"){
             Y=Y+veh[i].amount;
         }
         else{
