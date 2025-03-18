@@ -25,7 +25,7 @@ int main(){
             y+=mov[i].price;
             b++;
         }
-        else{
+        else if(strcmp(mov[i].type,"Premium")==0){
             z+=mov[i].price;
             c++;
         }
