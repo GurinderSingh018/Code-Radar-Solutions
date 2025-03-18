@@ -14,6 +14,6 @@ int main(){
     for(int i=0;i<7;i++){
         sum=sum+day[i].temp;
     }
-    printf("Average Temperature: %.2f",(float)sum/7.00);
+    printf("Average Temperature: %.2f",sum/7);
     return 0;
 }
