@@ -17,12 +17,13 @@ int main(){
         
         if(sal[i].salary>50000){
             bonus= (sal[i].salary)*10.0/100;
-            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",sal[i].id,sal[i].str,bonus);
+            
         }
         else{
             bonus= (sal[i].salary)*5.0/100;
-            printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",sal[i].id,sal[i].str,bonus);
+           
         }
+        printf("Employee ID: %d, Name: %s, Bonus: %.2f\n",sal[i].id,sal[i].str,bonus);
     }
     return 0;
 }
