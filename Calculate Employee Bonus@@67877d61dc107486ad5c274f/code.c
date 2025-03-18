@@ -2,7 +2,7 @@
 struct salary{
     int id;
     char str[50];
-    float salary;
+    int salary;
 };
 
 int main(){
@@ -10,11 +10,11 @@ int main(){
     scanf("%d",&n);
     struct salary sal[n];
     for(int i=0;i<n;i++){
-        scanf("%d %s %f",&sal[i].id,sal[i].str,&sal[i].salary);
+        scanf("%d %s %d",&sal[i].id,sal[i].str,&sal[i].salary);
     }
-    float bonus;
+    
     for(int i=0;i<n;i++){
-        
+        float bonus;
         if(sal[i].salary>50000){
             bonus= sal[i].salary*0.10;
             
