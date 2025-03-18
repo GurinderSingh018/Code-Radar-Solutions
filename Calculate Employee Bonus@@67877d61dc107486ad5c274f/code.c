@@ -12,9 +12,11 @@ int main(){
     for(int i=0;i<n;i++){
         scanf("%d %s %d",&sal[i].id,sal[i].str,&sal[i].salary);
     }
+    float bonus;
     for(int i=0;i<n;i++){
+
         if(sal[i].salary>50000){
-            float bonus= sal[i].salary*10/100;
+            bonus= sal[i].salary*10/100;
             printf("Employee ID: %d, Name: %s,Bonus: %.2f",sal[i].id,sal[i].str,bonus);
         }
         else{
