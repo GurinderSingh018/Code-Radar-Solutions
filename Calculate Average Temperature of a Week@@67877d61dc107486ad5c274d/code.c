@@ -10,10 +10,10 @@ int main(){
     for(int i=0;i<7;i++){
         scanf("%s %d",day[i].str,&day[i].temp);
     }
-    int sum=0;
+    float sum=0;
     for(int i=0;i<7;i++){
         sum=sum+day[i].temp;
     }
-    printf("Average Temperature: %.2f",sum);
+    printf("Average Temperature: %.2f",sum/7);
     return 0;
 }
