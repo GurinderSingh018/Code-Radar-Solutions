@@ -4,7 +4,7 @@
 void selectionSort(char arr[][100],int n){
     for(int i=0;i<n-1;i++){
         int mini=i;
-        for(int j=i+1;j<n-1;j++){
+        for(int j=i+1;j<n;j++){
             if(strcmp(arr[j],arr[i])<0){
                 mini=j;
                 
@@ -12,9 +12,9 @@ void selectionSort(char arr[][100],int n){
         }
         if(mini!=i){
         char temp[100];
-                strcpy(temp,arr[i]); 
-                strcpy(arr[i],arr[mini]);
-                strcpy(arr[mini],temp);
+        strcpy(temp,arr[i]); 
+        strcpy(arr[i],arr[mini]);
+        strcpy(arr[mini],temp);
         }
     }
 }
