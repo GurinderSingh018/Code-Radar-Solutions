@@ -3,13 +3,18 @@
 
 void selectionSort(char arr[][100],int n){
     for(int i=0;i<n-1;i++){
+        int mini=i;
         for(int j=i+1;j<n-1;j++){
             if(strcmp(arr[j],arr[i])<0){
-                char temp[100];
+                mini=j;
+                
+            }
+        }
+        if(mini!=i){
+        char temp[100];
                 strcpy(temp,arr[i]); 
                 strcpy(arr[i],arr[j]);
                 strcpy(arr[j],temp);
-            }
         }
     }
 }
