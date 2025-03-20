@@ -13,8 +13,8 @@ void selectionSort(char arr[][100],int n){
         if(mini!=i){
         char temp[100];
                 strcpy(temp,arr[i]); 
-                strcpy(arr[i],arr[j]);
-                strcpy(arr[j],temp);
+                strcpy(arr[i],arr[mini]);
+                strcpy(arr[mini],temp);
         }
     }
 }
