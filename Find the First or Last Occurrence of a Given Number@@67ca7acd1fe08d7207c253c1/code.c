@@ -2,7 +2,7 @@
 
 int findOccurrence(int arr[],int n,int t,char c){
     int j;
-    for(i=0;i<n;i++){
+    for(int i=0;i<n;i++){
 
             if(c=='F' && t==arr[i]){
                 j= i;
