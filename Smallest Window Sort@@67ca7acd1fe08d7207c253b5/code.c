@@ -1,29 +1,39 @@
 #include <stdio.h>
-
+#include<limits.h>
 int findUnsortedSubarray(int arr[],int n){
     
-    int i;
-    
-    for(i=0;i<n-1;i++){
-        
-        if(arr[i]>arr[i+1]){
-            
+    int s;    
+    for(s=0;s<n-1;s++){ 
+        if(arr[s]>arr[s+1]){            
             break;            
         }      
     }
-    if(i==n-1){
+    if(s==n-1){
         return 0;
     }
-    int j;
+    int e;
 
-    for(j=n-1;j>=0;j--){
-        
-        if(arr[j]<arr[j+1]){
-            
+    for(e=n-1;e>=0;e--){       
+        if(arr[e]<arr[e+1]){            
             break;
         }
     }
-    int count=j-i-1;
-    return count;
+    int min=INT_MAX;
+    int max=INT_MIN;
+    for(int i=i+1;i<j;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+        if(arr[i]>max){
+            max=arr[i];
+        }   
+    }
+    while(s>=0 && arr[s]>min){
+        s--;
+    }
+    while(s<n && arr[s]<max){
+        e++;
+    }
+    return e-c-1;
 }
 
