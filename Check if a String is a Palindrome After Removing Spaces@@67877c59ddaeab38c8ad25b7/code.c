@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<string.h>
-
+#include<ctype.h>
 int main(){
     char str[50];
     char str2[50];
@@ -16,7 +16,8 @@ int main(){
     int k=strlen(str2);
     int valid=1;
     for(int i=0;i<k/2;i++){
-        if(str2[i]!=str2[k-i-1]){
+        
+        if(tolower(str2[i])!=tolower(str2[k-i-1])){
              valid=0;
              break;
         }
