@@ -15,7 +15,7 @@ int main(){
         }
         while(j>0){
             j--;
-            s[i-j-1]=temp[j];
+            str[i-j-1]=temp[j];
         }
     }
     printf("%s",str);
