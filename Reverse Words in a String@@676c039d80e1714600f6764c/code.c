@@ -5,14 +5,17 @@ int main(){
     fgets(str,sizeof(str),stdin);
     int n=strlen(str);
     int i,j;
+    char temp[50];
     for(i=0;i<n;i++){
         for(j=0;j<n;j++,i++){
-            if(str[j]==' '){
+            if(str[i]==' '){
                 break;
             }
-            char temp=str[j];
-            str[j]=str[j+1];
-            str[j+1]=temp;
+            temp[j]=str[i];
+        }
+        while(j>0){
+            j--;
+            s[i-j-1]=temp[j];
         }
     }
     printf("%s",str);
