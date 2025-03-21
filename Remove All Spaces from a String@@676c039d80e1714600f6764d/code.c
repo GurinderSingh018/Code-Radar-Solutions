@@ -5,7 +5,10 @@ int main(){
     fgets(str,sizeof(str),stdin);
     char str1[50];
     for(int i=0;i<strlen(str);i++){
-        if(str[i]==' '){
+        if(i==0&&str[i]==' '){
+            str[i]=str[i+1];
+        }
+        else if(str[i]==' '){
             i=i-1;
             continue;
             
