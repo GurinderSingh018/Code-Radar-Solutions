@@ -4,7 +4,7 @@ int main(){
     char str[50];
     fgets(str,sizeof(str),stdin);
     char str1[50];
-    int j=0
+    int j=0;
     for(int i=0;i<strlen(str);i++){
         if(str[i]==' '){
             continue;
