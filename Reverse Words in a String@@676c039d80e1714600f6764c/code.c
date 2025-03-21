@@ -7,7 +7,7 @@ int main(){
     int i,j;
     char temp[50];
     for(i=0;i<n;i++){
-        for(j=0;j<n;j++,i++){
+        for(j=0;i<n;j++,i++){
             if(str[i]==' '){
                 break;
             }
