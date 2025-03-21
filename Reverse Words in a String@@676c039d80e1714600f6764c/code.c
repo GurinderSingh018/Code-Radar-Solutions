@@ -15,5 +15,6 @@ int main(){
             str[j+1]=temp;
         }
     }
+    printf("%s",str);
     return 0;
 }
