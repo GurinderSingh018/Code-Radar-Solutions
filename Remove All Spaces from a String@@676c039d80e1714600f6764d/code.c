@@ -4,17 +4,14 @@ int main(){
     char str[50];
     fgets(str,sizeof(str),stdin);
     char str1[50];
+    int j=0
     for(int i=0;i<strlen(str);i++){
-        if(i==0&&str[i]==' '){
-            str1[i]=str[i+1];
+        if(str[i]==' '){
             continue;
         }
-        else if(str[i]==' '){
-            i=i-1;
-            continue;
-            
-        }
-        str1[i]=str[i];
+        
+        str1[j++]=str[i];
     }
     printf("%s",str1);
+    return 0;
 }
