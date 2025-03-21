@@ -14,14 +14,13 @@ int main(){
         str2[j++]=str[i];
     }
     int k=strlen(str2);
-    int valid=0;
+    int valid=1;
     for(int i=0;i<k/2;i++){
-        if(str2[i]==str2[n-i-1]){
-             valid=1;
+        if(str2[i]!=str2[n-i-1]){
+             valid=0;
+             break;
         }
-        if(valid==0){
-            break;
-        }
+        
     }
     if(valid){
         printf("Yes");
