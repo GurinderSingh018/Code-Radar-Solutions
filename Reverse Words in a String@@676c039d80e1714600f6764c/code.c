@@ -5,8 +5,8 @@ int main(){
     fgets(str,sizeof(str),stdin);
     int n=strlen(str);
     int i,j;
-    for(int i=0;i<n;i--){
-        for(int j=0;j<n;j++,i++){
+    for(i=0;i<n;i++){
+        for(j=0;j<n;j++,i++){
             if(str[i]==' '){
                 break;
             }
