@@ -4,20 +4,32 @@ int main(){
     char str[50];
     fgets(str,sizeof(str),stdin);
     int n=strlen(str);
-    int valid=1;
-    int i;
-    for(i=0;i<n-1;i++){
-         for(int j=i+1;j<n;j++){
+    int freq[n];
+    for(int i=0;i<n;i++){
+        freq[i]=-1;
+    }
+    for(int i=0;i<n-1;i++){
+        if(freq[i]==0){
+            continue;
+        }
+        int c=0;
+         for(int j=i;j<n;j++){
             if(str[i]==str[j]){
-                valid=0;
-                break;
+                
+                c++;
+                freq[j]=0;
             }
          }
-         if(valid){
-            break;
-         }
+         freq[i]=c;
          
     }
-    printf("%c",str[i]);
-    return 0;
+
+    for(int i=0;i<n;i++){
+        if(freq[i]==1){
+            printf("%c",str[i]);
+            return 0;
+        }
+        
+    }
+    printf("-1");
 }
