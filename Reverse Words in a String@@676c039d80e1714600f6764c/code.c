@@ -7,12 +7,12 @@ int main(){
     int i,j;
     for(int i=0;i<n;i--){
         for(int j=0;j<n;j++,i++){
-            if(str[i]==" "){
+            if(str[i]==' '){
                 break;
             }
-            char temp=arr[j];
-            arr[j]=arr[j+1];
-            arr[j+1]=temp;
+            char temp=str[j];
+            str[j]=str[j+1];
+            str[j+1]=temp;
         }
     }
     return 0;
