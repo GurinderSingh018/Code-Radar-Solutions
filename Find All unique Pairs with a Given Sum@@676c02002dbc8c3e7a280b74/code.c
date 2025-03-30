@@ -9,9 +9,8 @@ int main(){
     }
     int T;
     scanf("%d",&T);
-    for(int i=0;i<n;i++){
-        for(int j=i+1;j<n;j++){
-            
+    for(int i=0;i<n/2;i++){
+        for(int j>=n/2;j=n-1;j--){
             int sum=arr[i]+arr[j];
             if(sum==T){
                 printf("%d %d\n",arr[i],arr[j]);
