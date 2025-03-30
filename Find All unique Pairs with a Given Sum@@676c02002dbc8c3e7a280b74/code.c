@@ -10,7 +10,7 @@ int main(){
     int T;
     scanf("%d",&T);
     for(int i=0;i<n/2;i++){
-        for(int j>=n/2;j=n-1;j--){
+        for(int j=n-1;j>=n/2;j--){
             int sum=arr[i]+arr[j];
             if(sum==T){
                 printf("%d %d\n",arr[i],arr[j]);
