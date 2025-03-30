@@ -14,9 +14,10 @@ int main(){
             int sum=arr[i]+arr[j];
             if(sum==T){
                 printf("%d %d\n",arr[i],arr[j]);
-                break;
+                
             }
-        
+           while(j+1<n && arr[j]==arr[j+1]) j++;
         }
+        while (i+1<n && arr[i]==arr[i+1]) i++;
     }
 }
