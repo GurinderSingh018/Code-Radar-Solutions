@@ -24,5 +24,6 @@ int main(){
          }
          i++;
       }
+      printf("%s",str2);
       
 }
