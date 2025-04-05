@@ -15,6 +15,15 @@ int main(){
             }
         }
     }
-    printf("%s",str1);
+    for(int i=0;i<strlen(str2)-1;i++){
+        for(int j=i+1;j<strlen(str2);j++){
+            if(str2[i]>str2[j]){
+                char temp=str2[i];
+                str2[i]=str2[j];
+                str2[j]=temp;
+            }
+        }
+    }
+    printf("%s %s",str1,str2);
     return 0;
 }
