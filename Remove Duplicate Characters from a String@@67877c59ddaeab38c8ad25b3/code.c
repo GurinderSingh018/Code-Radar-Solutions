@@ -17,5 +17,6 @@ int main(){
             str2[i]=str[i];
         }
     }
-    print("%s",str2);
+    printf("%s",str2);
+    return 0;
 }
