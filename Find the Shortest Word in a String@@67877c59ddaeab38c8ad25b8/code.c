@@ -17,9 +17,9 @@ int main(){
     }
     str2[k][j]='\0';
     int m=0;
-    for(int i=0;i<k;i++){
-        if(strlen(str2[i])<strlen(str2[m])){
-            m=i;
+    for(int l=1;l=<k;l++){
+        if(strlen(str2[l])<strlen(str2[m])){
+            m=l;
         }
     }
     printf("%s",str2[m]);
