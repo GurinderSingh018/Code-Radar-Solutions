@@ -23,4 +23,5 @@ int main(){
         }
     }
     printf("%s",str[m]);
+    return 0;
 }
