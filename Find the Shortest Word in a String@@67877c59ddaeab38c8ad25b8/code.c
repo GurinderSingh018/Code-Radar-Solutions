@@ -18,7 +18,7 @@ int main(){
     str2[k][j]='\0';
     int m=0;
     for(int i=0;i<k;i++){
-        if(strlen(str2[i])<stlen(str2[m])){
+        if(strlen(str2[i])<strlen(str2[m])){
             m=i;
         }
     }
