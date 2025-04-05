@@ -21,7 +21,7 @@ int main(){
       
       int m=0;
       for(int l=1;l<=k;l++){
-        if(strlen(str2[i]) > strlen(str2[m])){
+        if(strlen(str2[l]) > strlen(str2[m])){
             m=l;
         }
       }
