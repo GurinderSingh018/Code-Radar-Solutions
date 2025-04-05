@@ -22,6 +22,6 @@ int main(){
             m=i;
         }
     }
-    printf("%s",str[m]);
+    printf("%s",str2[m]);
     return 0;
 }
