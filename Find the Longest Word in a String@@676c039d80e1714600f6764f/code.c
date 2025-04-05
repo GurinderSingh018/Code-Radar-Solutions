@@ -7,7 +7,7 @@ int main(){
       int i,j=0,k=0;
       for(i=0;str[i]!='\0';i++){
         if(str[i]==' '){
-            str[k][j]='\0';
+            str2[k][j]='\0';
             j=0;
             k++;
         }
