@@ -20,7 +20,7 @@ int main(){
       str2[k][j]='\0';
       int max = strlen(str2[0]);
       int m=0;
-      for(int l=0;l<=k;l++){
+      for(int l=1;l<=k;l++){
         if(max<strlen(str2[l])){
             m=l;
         }
