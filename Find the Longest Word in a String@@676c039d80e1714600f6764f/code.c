@@ -9,7 +9,7 @@ int main(){
       int i=0;
       while(str[i]!='\0'){
         count =0;
-        int j;
+        int j=0;
          for(j=0;j<strlen(str);j++){
             if(str[j]==' '){
                 break;
