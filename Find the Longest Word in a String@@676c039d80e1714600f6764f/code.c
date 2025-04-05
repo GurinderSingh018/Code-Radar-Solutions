@@ -9,8 +9,8 @@ int main(){
       for(i=0;str[i]!='\0';i++){
         if(str[i]==' '){
             str2[k][j]='\0';
-            j=0;
             k++;
+            j=0;
         }
         else{
           str2[k][j]=str[i];
