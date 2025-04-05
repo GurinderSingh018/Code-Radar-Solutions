@@ -18,7 +18,7 @@ int main(){
         }
       }
       str2[k][j]='\0';
-      int max=strlen[str2[0]];
+      int max=strlen(str2[0]);
       for(int i=0;i<k;i++){
         if(max<strlen(str2[i])){
             max=i;
