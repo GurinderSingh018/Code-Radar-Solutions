@@ -7,13 +7,13 @@ int main(){
     scanf("%[^\n]s",&str);
     
     for(int i=0;i<strlen(str);i++){
-        int valid=1;
+        int count =0;
         for(int j=i+1;j<strlen(str);j++){
             if(str[i]==str[j]){
-                valid=0;
+                count++;
             }
         }
-        if(valid){
+        if(count==1){
             str2[i]=str[i];
         }
     }
