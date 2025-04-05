@@ -4,7 +4,7 @@ int main(){
     char str[50],str2[10][50];
     scanf("%[^\n]s",&str);
     int j=0,k=0;
-    for(int i=0;i!='\0';i++){
+    for(int i=0;str[i]!='\0';i++){
         if(str[i]==' '){
             str2[k][j]='\0';
             k++;
