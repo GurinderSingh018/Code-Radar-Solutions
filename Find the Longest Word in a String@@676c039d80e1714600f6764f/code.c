@@ -2,28 +2,26 @@
 #include<string.h>
 int main(){
       char str[50];
-      char str2[50];
+      char str2[10][50];
       fgets(str,sizeof(str),stdin);
-      int count;
-      int max=0;
-      int i=0;
-      while(str[i]!='\0'){
-        count =0;
-        int j=0;
-         for(j=0;j<strlen(str);j++){
-            if(str[j]==' '){
-                break;
-            }
-            count++;
-         }
-         if(max<count){
-            max=count;
-            for(int k=0;k<max;k++){
-                str2[k]=str[j+k];
-            }
-         }
-         i++;
+      int i,j=0,k=0;
+      for(i=0;str[i]!='\0';i++){
+        if(str[i]==' '){
+            str[k][j]='\0';
+            j=0;
+            k++;
+        }
+        str2[k][j]=str[i];
+        j++;
       }
-      printf("%s",str2);
-      
+      str2[k][j]='\n';
+      int max=0;
+      for(int i=0;i<k;i++){
+        if(max<strlen(str2[i])){
+            max=strlen(str2[i]);
+        }
+      }
+    
+      printf("%s",str2[max]);
+      return 0;
 }
