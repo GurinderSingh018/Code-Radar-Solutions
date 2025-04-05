@@ -3,7 +3,7 @@
 int main(){
       char str[50];
       char str2[10][50];
-      fgets(str,sizeof(str),stdin);
+      scanf("%[^\n]s",&str);
      
       int i,j=0,k=0;
       for(i=0;str[i]!='\0';i++){
