@@ -5,7 +5,7 @@ int main(){
     char str[50];
     char str2[50];
     scanf("%[^\n]s",&str);
-    
+    int k=0;
     for(int i=0;i<strlen(str);i++){
         int count =0;
         for(int j=0;j<strlen(str);j++){
@@ -14,7 +14,7 @@ int main(){
             }
         }
         if(count==1){
-            str2[i]=str[i];
+            str2[k++]=str[i];
         }
     }
     printf("%s",str2);
