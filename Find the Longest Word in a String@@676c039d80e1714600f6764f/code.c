@@ -18,7 +18,7 @@ int main(){
       int max=0;
       for(int i=0;i<k;i++){
         if(max<strlen(str2[i])){
-            max=strlen(str2[i]);
+            max=i;
         }
       }
     
