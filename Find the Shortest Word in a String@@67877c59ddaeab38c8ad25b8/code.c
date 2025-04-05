@@ -1,5 +1,5 @@
 #include<stdio.h>
-
+#include<string.h>
 int main(){
     char str[50],str2[10][50];
     scanf("%[^\n]s",&str);
