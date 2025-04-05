@@ -26,6 +26,6 @@ int main(){
         }
       }
     
-      printf("%s",str2[max]);
+      printf("%s",str2[m]);
       return 0;
 }
