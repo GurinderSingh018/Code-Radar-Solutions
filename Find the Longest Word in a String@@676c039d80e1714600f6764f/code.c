@@ -22,6 +22,7 @@ int main(){
                 str2[k]=str[j+k];
             }
          }
+         i++;
       }
       
 }
