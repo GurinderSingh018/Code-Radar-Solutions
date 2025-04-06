@@ -7,7 +7,7 @@ int main(){
     int valid=0;
     for(int i=0;i<26;i++){
         for(int j=0;str2[j]!='\0';j++){
-            char a =tolower(str2[j])
+            char a =tolower(str2[j]);
             if(str[i]==a){
                 valid=1;
                 break;
