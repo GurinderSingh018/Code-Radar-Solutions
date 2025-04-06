@@ -8,7 +8,7 @@ int main(){
     for(int i=0;i<26;i++){
         for(int j=0;str2[j]!='\0';j++){
             if(str[i]==str2[j]){
-                vaild=1;
+                valid=1;
                 break;
             }
         }
