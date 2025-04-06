@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main(){
-    char str[26]="abcdefghijklmnopqrstuvwxyz"
+    char str[26]="abcdefghijklmnopqrstuvwxyz";
     char str2[50];
     scanf("%[^\n]s",&str2);
     int valid=0;
